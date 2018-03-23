@@ -118,6 +118,7 @@ li {
     font-size: 16px;
     border-bottom: 1px solid #F5F5F5;
 
+
     /* #5 #channels position channel-meta #icons within the li needs relative positioning (relative stops absolute) */
     position: relative;
 }
@@ -127,15 +128,32 @@ li .channel-meta {
     position: absolute;
     right: 16px;
     top: 12px;
+
 }
 
+/* not needed anymore
 li img {
     vertical-align: middle;
-}
+}*/
 
 li.selected {
     color: #3F51B5;
     border-left: 4px solid #3F51B5;
+}
+
+/*make font awesome icons' size to 24px;*/
+li i {
+  font-size: 24px;
+}
+
+li span span {
+  background-color: #3F51B5;
+  color: white;
+  padding: 2px;
+  font-size: small;
+  border-radius: 2px;
+  position: relative;
+  top: -4px;
 }
 
 /* TAB BAR */
@@ -172,17 +190,34 @@ li.selected {
     border-bottom: 4px solid #3F51B5;
 }
 
-#tab-bar button img {
+/* #7 change css selector to i to change fontawesome icons*/
+#tab-bar button i {
     display: block;
     margin: 0 auto 4px auto;
+    font-size: 24px;
 }
 
 /* #5 CHAT BAR */
+
+#chat-bar {
+  display: flex;
+}
 
 #chat-bar button {
     /* #5 #smileys #override button styles. We set the chat bar to appear like a tab-bar above. This overrides the tab bar's button scaling */
     width: auto;
     flex-grow: 0;
+}
+
+#chat-bar i {
+  font-size: 24px;
+}
+
+#txtmessage {
+  /* #8 style the textbox*/
+  flex-grow: 1;
+  border: none;
+  font-size: 16px;
 }
 
 #emojis {
