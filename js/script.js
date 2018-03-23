@@ -3,7 +3,7 @@ var currentChannel;
 var currentLocation = {
   longitude: 14.588763,
   latitude: 121.094825,
-  what3Words: 'heats.host.compound'
+  what3Words: 'waffle.files.pancakes'
 }
 
 /* #6 start the #external #action and say hello */
@@ -157,7 +157,7 @@ function createChannelElement (channelObject) {
 
 window.onload = listChannels;
 
-// #8 created this function to generate random numbers for the boxes on channel list
+// #8 created this function to generate a random number (1-1000) for the boxes on channel list
 function getRandomNumber() {
-  return Math.floor(Math.random() * 10000) + 1;
+  return Math.floor(Math.random() * 1000) + 1;
 }
